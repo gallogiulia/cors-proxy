@@ -1,3 +1,2 @@
 [build]
   functions = "functions"
-  publish = "dist"  # or wherever your static site lives, if any
