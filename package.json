@@ -1,10 +1,6 @@
 {
   "name": "cors-proxy",
   "version": "1.0.0",
-  "type": "module",
-  "dependencies": {
-    "node-fetch": "^3.3.2"
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gallogiulia/cors-proxy/issues"
   },
-  "homepage": "https://github.com/gallogiulia/cors-proxy#readme"
+  "homepage": "https://github.com/gallogiulia/cors-proxy#readme",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
 }
