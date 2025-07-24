@@ -1,7 +1,8 @@
 const fetch = require("node-fetch");
-
 exports.handler = async function(event, context) {
   try {
+    const fetch = (await import('node-fetch')).default;
+
     const response = await fetch("https://script.google.com/macros/s/AKfycbzKtthISCwjQMUBWZrfYgPlQ2nqTEfOdJw7VO2YVPUNWbwF6UOTtjIH9n-T74caDBgCBA/exec");
     const contentType = response.headers.get("content-type");
 
