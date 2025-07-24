@@ -11,3 +11,4 @@ export async function handler(event, context) {
     body: data
   };
 }
+
