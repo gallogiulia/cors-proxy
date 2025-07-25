@@ -4,7 +4,9 @@ import fetch from "node-fetch";
 
 export async function handler(event, context) {
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbzKtthISCwjQMUBWZrfYgPlQ2nqTEfOdJw7VO2YVPUNWbwF6UOTtjIH9n-T74caDBgCBA/exec");
+    // const response = await fetch("https://script.google.com/macros/s/AKfycbzKtthISCwjQMUBWZrfYgPlQ2nqTEfOdJw7VO2YVPUNWbwF6UOTtjIH9n-T74caDBgCBA/exec");
+    const response = await fetch("https://script.google.com/macros/s/AKfycbx8mjgqHwRGSShxPc_HA1Jn6r8y0AGO9FnpZaMPAtWbhOTwRlgNeg2qxvyCp6EVxnoz/exec");
+
     const contentType = response.headers.get("content-type");
 
     const data = contentType.includes("application/json")
